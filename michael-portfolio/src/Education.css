@@ -1,0 +1,111 @@
+.edu-grid { display: grid; gap: 1rem; margin-bottom: 3rem; }
+
+.edu-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.6rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  transition: border-color 0.2s;
+}
+.edu-card:hover { border-color: var(--teal); }
+
+.edu-institution {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+}
+
+.edu-degree {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 300;
+}
+
+.edu-note {
+  color: var(--teal-light);
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+.edu-date {
+  font-size: 0.75rem;
+  color: var(--teal-light);
+  font-weight: 600;
+  white-space: nowrap;
+  background: var(--teal-glow);
+  padding: 0.3rem 0.85rem;
+  border-radius: 6px;
+}
+
+.sub-title {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+  margin-top: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.certs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.cert-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  transition: border-color 0.2s;
+}
+.cert-item:hover { border-color: var(--teal); }
+
+.cert-icon { font-size: 1.2rem; flex-shrink: 0; }
+.cert-text { font-size: 0.86rem; color: var(--text); }
+
+.lang-grid { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.lang-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: border-color 0.2s;
+}
+.lang-item:hover { border-color: var(--teal); }
+
+.lang-name {
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--white);
+  font-size: 0.92rem;
+}
+
+.lang-level {
+  font-size: 0.75rem;
+  color: var(--teal-light);
+  background: var(--teal-glow);
+  padding: 0.18rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .edu-card { flex-direction: column; gap: 0.6rem; }
+}
