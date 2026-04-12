@@ -9,7 +9,6 @@ export const personal = {
   portfolio: "https://michael-philip-portfolio.vercel.app",
   github: "https://github.com/Meet-hybrid",
   twitter: "https://x.com/Meethybrid_",
-  whatsapp: "https://wa.me/2348101177267",
   location: "Nigeria · Remote",
   available: "Open to Remote & International Opportunities",
 };
