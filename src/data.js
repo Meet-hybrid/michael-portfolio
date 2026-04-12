@@ -78,8 +78,6 @@ export const projects = [
     description: "A fully responsive SPA built with React JS featuring real-time form validation, live feedback display, and a Node.js REST API backend for data persistence. Ensured cross-device compatibility and followed agile practices throughout.",
     tech: ["React JS", "Node.js", "REST API", "CSS3", "Git"],
     github: "https://github.com/Meet-hybrid",
-  twitter: "https://x.com/Meethybrid_",
-  whatsapp: "https://wa.me/2348101177267",
   },
   {
     title: "Retail Analytics Dashboard",
@@ -87,8 +85,6 @@ export const projects = [
     description: "Interactive dashboard with React JS and Redux visualising retail sales and agent performance data. Consumes a Python REST API with responsive data tables and charts optimised for non-technical users.",
     tech: ["React JS", "Redux", "Python", "REST API", "GitHub"],
     github: "https://github.com/Meet-hybrid",
-  twitter: "https://x.com/Meethybrid_",
-  whatsapp: "https://wa.me/2348101177267",
   },
   {
     title: "QuickPay",
