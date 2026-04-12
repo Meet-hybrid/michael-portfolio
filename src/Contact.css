@@ -118,3 +118,14 @@
   .contact-section { padding: 4rem 1.5rem; }
   .contact-card { padding: 3rem 1.8rem; }
 }
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  border: none;
+}
+.btn-whatsapp:hover {
+  background: #20ba58;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37,211,102,0.35);
+}
