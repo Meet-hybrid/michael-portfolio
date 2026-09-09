@@ -41,7 +41,8 @@ export default function Projects() {
                 </a>
               )}
               {p.comingSoon && <span className="project-link disabled">Live Demo — Soon</span>}
-              {p.clientProject && <span className="project-link disabled">Private Repository</span>}
+              {p.clientProject && !p.live && <span className="project-link disabled">Private Repository</span>}
+              {p.clientProject && p.live && <span className="project-link disabled">Code — Private</span>}
             </div>
             {p.demoNote && <p className="project-demo-note">{p.demoNote}</p>}
           </motion.div>

@@ -74,6 +74,7 @@ export const projects = [
     year: "2026",
     description: "Express + Socket.IO backend for a multi-role event ecosystem (planners, guests, vendors, super-admins): room-based real-time ordering, MongoDB domain modeling, Redis caching, BullMQ queues, Paystack payments, and Google OAuth + JWT.",
     tech: ["Node.js", "Express", "MongoDB", "Socket.IO", "Redis", "BullMQ"],
+    live: "https://www.even3ry.com/",
     clientProject: true,
   },
   {
