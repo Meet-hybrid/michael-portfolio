@@ -53,6 +53,7 @@ export const skills = [
       { name: "MySQL", color: "#4479a1", bg: "#001525" },
       { name: "MongoDB", color: "#4db33d", bg: "#0d2200" },
       { name: "Redis", color: "#ff6b6b", bg: "#2d0600" },
+      { name: "Supabase", color: "#3ecf8e", bg: "#00251a" },
       { name: "Firebase", color: "#ffca28", bg: "#2d2200" },
     ],
   },
