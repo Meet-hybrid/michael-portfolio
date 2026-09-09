@@ -1,8 +1,8 @@
 export const personal = {
   name: "Michael Philip",
   title: "Backend Software Engineer",
-  subtitle: "Java · Spring Boot · Python · FastAPI · Django · Node.js · PostgreSQL · MongoDB",
-  tagline: "Trained at Semicolon Africa · Building secure, scalable REST APIs and real-time backend systems. Based in Nigeria, building for the world.",
+  subtitle: "Java · Spring Boot · Python · Node.js · React · Next.js · Vue · PostgreSQL",
+  tagline: "Trained at Semicolon Africa · Building secure, scalable REST APIs and real-time backend systems — plus the React, Next.js and Vue frontends that consume them. Based in Nigeria, building for the world.",
   email: "philipmichaelonyekachi@gmail.com",
   phone: "+234 810 117 7267",
   whatsapp: "https://wa.me/2348101177267",
@@ -34,6 +34,16 @@ export const skills = [
       { name: "Node.js", color: "#68a063", bg: "#0d2010" },
       { name: "Express", color: "#dddddd", bg: "#1a1a1a" },
       { name: "Socket.IO", color: "#ffffff", bg: "#111111" },
+    ],
+  },
+  {
+    category: "Frontend",
+    items: [
+      { name: "React", color: "#61dafb", bg: "#00222e" },
+      { name: "Next.js", color: "#ffffff", bg: "#111111" },
+      { name: "Vue 3", color: "#42b883", bg: "#0c241a" },
+      { name: "Tailwind CSS", color: "#38bdf8", bg: "#00202e" },
+      { name: "Pinia", color: "#ffd85c", bg: "#2d2500" },
     ],
   },
   {
@@ -87,8 +97,8 @@ export const projects = [
   {
     title: "MeethybridHub — Multi-Tenant E-Commerce SaaS",
     year: "2025 – Present",
-    description: "Shopify-style platform where every business gets its own branded storefront: row-level store isolation, tenant resolution via subdomain/custom domains, JWT auth with refresh rotation and revocation, installment payments, Redis caching, and an enforced 80%+ test-coverage CI gate.",
-    tech: ["Java", "Spring Boot 3", "PostgreSQL", "Redis", "Flyway", "GitHub Actions"],
+    description: "Shopify-style platform where every business gets its own branded storefront: row-level store isolation, tenant resolution via subdomain/custom domains, JWT auth with refresh rotation and revocation, installment payments, Redis caching, and an enforced 80%+ test-coverage CI gate. Ships with a Next.js 15 storefront and a React merchant dashboard.",
+    tech: ["Java", "Spring Boot 3", "PostgreSQL", "Next.js 15", "React", "Tailwind CSS"],
     github: "https://github.com/Meet-hybrid/meethybridhub",
   },
   {
