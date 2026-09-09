@@ -67,6 +67,7 @@ export const projects = [
     tech: ["TypeScript", "Vue 3", "Pinia", "Vitest", "PWA"],
     github: "https://github.com/Meet-hybrid/pos-system",
     live: "https://pos-system-nine-coral.vercel.app/",
+    demoNote: "Try the scanner with test barcodes: 111111 · 222222 · 333333 · 444444 · 555555",
   },
   {
     title: "Eventery — Real-Time Event Platform",

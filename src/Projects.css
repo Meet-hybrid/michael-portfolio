@@ -180,3 +180,14 @@
   pointer-events: none;
   font-style: italic;
 }
+
+.project-demo-note {
+  margin-top: 0.7rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: rgba(26,107,138,0.08);
+  border-left: 2px solid var(--teal);
+  padding: 0.45rem 0.7rem;
+  border-radius: 0 6px 6px 0;
+  line-height: 1.5;
+}
