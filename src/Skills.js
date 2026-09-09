@@ -17,7 +17,6 @@ export default function Skills() {
             transition={{ delay: i * 0.1, duration: 0.5 }}
           >
             <div className="skill-group-header">
-              <span className="skill-group-icon">{group.icon}</span>
               <span className="skill-group-title">{group.category}</span>
             </div>
             <div className="skill-badges">

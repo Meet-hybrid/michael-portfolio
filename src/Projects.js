@@ -20,7 +20,9 @@ export default function Projects() {
             <div className="project-top-bar" />
             <div className="project-header">
               <div className="project-year">{p.year}</div>
-              {p.live && <span className="live-badge">🟢 Live</span>}
+              {p.live && <span className="live-badge"><span className="live-dot" />Live</span>}
+              {p.comingSoon && <span className="soon-badge">In Progress · Coming Soon</span>}
+              {p.clientProject && <span className="client-badge">Client Project</span>}
             </div>
             <h3 className="project-title">{p.title}</h3>
             <p className="project-desc">{p.description}</p>
@@ -28,14 +30,18 @@ export default function Projects() {
               {p.tech.map(t => <span key={t}>{t}</span>)}
             </div>
             <div className="project-links">
-              <a href={p.github} target="_blank" rel="noreferrer" className="project-link">
-                <GithubIcon /> Code
-              </a>
+              {p.github && (
+                <a href={p.github} target="_blank" rel="noreferrer" className="project-link">
+                  <GithubIcon /> Code
+                </a>
+              )}
               {p.live && (
                 <a href={p.live} target="_blank" rel="noreferrer" className="project-link live-link">
                   <LinkIcon /> Live Demo
                 </a>
               )}
+              {p.comingSoon && <span className="project-link disabled">Live Demo — Soon</span>}
+              {p.clientProject && <span className="project-link disabled">Private Repository</span>}
             </div>
           </motion.div>
         ))}

@@ -37,7 +37,7 @@ export default function Education() {
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
           >
-            <span className="cert-icon">{c.icon}</span>
+            <span className="cert-marker" />
             <span className="cert-text">{c.text}</span>
           </motion.div>
         ))}

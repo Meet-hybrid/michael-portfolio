@@ -1,8 +1,8 @@
 export const personal = {
   name: "Michael Philip",
-  title: "Full Stack Engineer",
-  subtitle: "React JS · TypeScript · Java · Node.js · Python",
-  tagline: "Trained at Semicolon Africa · Bridging customer empathy with scalable engineering. Based in Nigeria, building for the world.",
+  title: "Backend Software Engineer",
+  subtitle: "Java · Spring Boot · Python · FastAPI · Django · Node.js · PostgreSQL · MongoDB",
+  tagline: "Trained at Semicolon Africa · Building secure, scalable REST APIs and real-time backend systems. Based in Nigeria, building for the world.",
   email: "philipmichaelonyekachi@gmail.com",
   phone: "+234 810 117 7267",
   whatsapp: "https://wa.me/2348101177267",
@@ -10,102 +10,98 @@ export const personal = {
   github: "https://github.com/Meet-hybrid",
   twitter: "https://x.com/Meethybrid_",
   location: "Nigeria · Remote",
-  available: "Open to Remote & International Opportunities",
+  available: "Open to Remote & International Backend Engineering Roles",
 };
 
 export const skills = [
   {
     category: "Languages",
-    icon: "💻",
     items: [
       { name: "Java", color: "#f89820", bg: "#2d1f00" },
       { name: "Python", color: "#3776ab", bg: "#001a2d" },
       { name: "JavaScript", color: "#f7df1e", bg: "#2d2a00" },
       { name: "TypeScript", color: "#3178c6", bg: "#001a38" },
-      { name: "Go", color: "#00acd7", bg: "#00202d" },
-      { name: "C++", color: "#00599c", bg: "#00152a" },
+      { name: "SQL", color: "#e38c00", bg: "#2d2000" },
     ],
   },
   {
-    category: "Tech Stack",
-    icon: "🛠️",
+    category: "Backend",
     items: [
-      { name: "Node.js", color: "#68a063", bg: "#0d2010" },
+      { name: "Spring Boot", color: "#6db33f", bg: "#112200" },
+      { name: "Spring Security", color: "#6db33f", bg: "#112200" },
+      { name: "FastAPI", color: "#05998b", bg: "#00201d" },
       { name: "Django", color: "#a8d5b5", bg: "#092e20" },
-      { name: "Spring", color: "#6db33f", bg: "#112200" },
-      { name: "React", color: "#61dafb", bg: "#002d3a" },
-      { name: "Flutter", color: "#54c5f8", bg: "#002233" },
-      { name: "Socket.io", color: "#ffffff", bg: "#111111" },
+      { name: "Node.js", color: "#68a063", bg: "#0d2010" },
+      { name: "Express", color: "#dddddd", bg: "#1a1a1a" },
+      { name: "Socket.IO", color: "#ffffff", bg: "#111111" },
     ],
   },
   {
-    category: "Databases & Cloud",
-    icon: "🗄️",
+    category: "Databases & Caching",
     items: [
       { name: "PostgreSQL", color: "#74a9d8", bg: "#001525" },
-      { name: "MongoDB", color: "#4db33d", bg: "#0d2200" },
       { name: "MySQL", color: "#4479a1", bg: "#001525" },
+      { name: "MongoDB", color: "#4db33d", bg: "#0d2200" },
       { name: "Redis", color: "#ff6b6b", bg: "#2d0600" },
       { name: "Firebase", color: "#ffca28", bg: "#2d2200" },
-      { name: "Supabase", color: "#3ecf8e", bg: "#00251a" },
     ],
   },
   {
-    category: "Tools",
-    icon: "⚙️",
+    category: "Testing & DevOps",
     items: [
+      { name: "JUnit", color: "#c9934a", bg: "#2a1d05" },
+      { name: "Pytest", color: "#6bcebb", bg: "#062622" },
       { name: "Docker", color: "#0db7ed", bg: "#00232e" },
-      { name: "Git", color: "#f05032", bg: "#2d0e00" },
-      { name: "Postman", color: "#ff6c37", bg: "#2d1000" },
       { name: "GitHub Actions", color: "#5b8dee", bg: "#001a3a" },
-      { name: "Figma", color: "#f24e1e", bg: "#2d0e00" },
+      { name: "Postman", color: "#ff6c37", bg: "#2d1000" },
+      { name: "Git", color: "#f05032", bg: "#2d0e00" },
     ],
   },
 ];
 
 export const projects = [
   {
-    title: "HybridChat",
+    title: "Point of Sale (POS) System",
     year: "2026",
-    description: "A real-time chat application built with Vue.js, Tailwind CSS, and Firebase. Features include live messaging, user authentication, status stories, floating chat, and an admin dashboard — fully deployed and live.",
-    tech: ["Vue.js", "Tailwind CSS", "Firebase", "Vite", "Vercel"],
-    github: "https://github.com/Meet-hybrid/hybridChat",
-    live: "https://hybridchat.vercel.app/",
+    description: "Production POS web app in Vue 3 + TypeScript with a fully unit-tested Pinia cart store. Offline-first PWA: localStorage cart persistence, double-charge prevention, receipt generation, and scanner input — deployed live on Vercel.",
+    tech: ["TypeScript", "Vue 3", "Pinia", "Vitest", "PWA"],
+    github: "https://github.com/Meet-hybrid/pos-system",
+    live: "https://pos-system-nine-coral.vercel.app/",
   },
   {
-    title: "Customer Feedback Web App",
+    title: "Eventery — Real-Time Event Platform",
+    year: "2026",
+    description: "Express + Socket.IO backend for a multi-role event ecosystem (planners, guests, vendors, super-admins): room-based real-time ordering, MongoDB domain modeling, Redis caching, BullMQ queues, Paystack payments, and Google OAuth + JWT.",
+    tech: ["Node.js", "Express", "MongoDB", "Socket.IO", "Redis", "BullMQ"],
+    clientProject: true,
+  },
+  {
+    title: "Equipment Rental Marketplace",
+    year: "2026 · Ongoing",
+    description: "Spring Boot backend MVP for a peer-to-peer equipment rental marketplace: KYC-verified accounts, listings with admin approval, location-based search, and a full rental transaction core — bookings, payments, deposits, escrow, refunds, and payouts.",
+    tech: ["Java", "Spring Boot", "PostgreSQL", "WebSockets", "Escrow"],
+    comingSoon: true,
+  },
+  {
+    title: "MeethybridHub — Multi-Tenant E-Commerce SaaS",
+    year: "2025 – Present",
+    description: "Shopify-style platform where every business gets its own branded storefront: row-level store isolation, tenant resolution via subdomain/custom domains, JWT auth with refresh rotation and revocation, installment payments, Redis caching, and an enforced 80%+ test-coverage CI gate.",
+    tech: ["Java", "Spring Boot 3", "PostgreSQL", "Redis", "Flyway", "GitHub Actions"],
+    github: "https://github.com/Meet-hybrid/meethybridhub",
+  },
+  {
+    title: "Bizora — AI Business Management Platform",
+    year: "2025 – Present",
+    description: "FastAPI REST API with Clean Architecture for inventory, sales, expenses, installment payments, and AI-driven analytics — JWT + RBAC, Alembic migrations on MySQL, async LLM operations, and a Pytest/httpx suite covering contracts and edge cases.",
+    tech: ["Python", "FastAPI", "SQLAlchemy", "MySQL", "Pytest"],
+    github: "https://github.com/Meet-hybrid/Bizora",
+  },
+  {
+    title: "Nara — Personal Finance Platform",
     year: "2025",
-    description: "A fully responsive SPA built with React JS featuring real-time form validation, live feedback display, and a Node.js REST API backend for data persistence. Ensured cross-device compatibility and followed agile practices throughout.",
-    tech: ["React JS", "Node.js", "REST API", "CSS3", "Git"],
-    github: "https://github.com/Meet-hybrid",
-  },
-  {
-    title: "Retail Analytics Dashboard",
-    year: "2025",
-    description: "Interactive dashboard with React JS and Redux visualising retail sales and agent performance data. Consumes a Python REST API with responsive data tables and charts optimised for non-technical users.",
-    tech: ["React JS", "Redux", "Python", "REST API", "GitHub"],
-    github: "https://github.com/Meet-hybrid",
-  },
-  {
-    title: "QuickPay",
-    year: "Semicolon Africa",
-    description: "A Python-based payment utility project developed during the Semicolon Africa engineering programme, focusing on clean architecture, OOP principles, and backend logic.",
-    tech: ["Python", "OOP", "Backend"],
-    github: "https://github.com/Meet-hybrid/QuickPay",
-  },
-  {
-    title: "BankSystem",
-    year: "Semicolon Africa",
-    description: "A Java-based banking system implementing OOP concepts including inheritance, encapsulation, and polymorphism with full account management functionality.",
-    tech: ["Java", "OOP", "Spring Boot"],
-    github: "https://github.com/Meet-hybrid/BankSystem",
-  },
-  {
-    title: "SecondarySchoolSystem",
-    year: "Semicolon Africa",
-    description: "A school management system built in Java covering student records, grading, and administrative functions with a focus on clean system design.",
-    tech: ["Java", "MySQL", "OOP"],
-    github: "https://github.com/Meet-hybrid/SecondarySchoolSystem",
+    description: "Django REST Framework backend for budgeting: atomic transactions across all writes, JWT with refresh rotation and blacklisting, normalized PostgreSQL schemas with strategic indexing, Redis-cached reporting, Docker, and a full Pytest suite.",
+    tech: ["Python", "Django", "DRF", "PostgreSQL", "Redis", "Docker"],
+    github: "https://github.com/Meet-hybrid/Nara-capstone-project",
   },
 ];
 
@@ -116,7 +112,7 @@ export const experience = [
     location: "Lagos, Nigeria",
     date: "2026 – Present",
     bullets: [
-      "Applying full-stack skills on real-world projects using React JS, Node.js, and Java",
+      "Applying backend and full-stack skills on real-world projects using Java, Spring Boot, Node.js, and Python",
       "Collaborating with peers and mentors using agile methodologies and code reviews",
       "Building with clean architecture principles across frontend and backend systems",
     ],
@@ -191,10 +187,10 @@ export const education = [
 ];
 
 export const certifications = [
-  { icon: "🎓", text: "Software Engineering Certificate — Semicolon Africa, 2026" },
-  { icon: "🏅", text: "Certificate of National Service (NYSC) — 2023" },
-  { icon: "🎓", text: "B.Sc. Business Education — Michael Okpara University, 2021" },
-  { icon: "💻", text: "ICT Competence Certificate — 2019" },
+  { text: "Software Engineering Certificate — Semicolon Africa, 2026" },
+  { text: "Certificate of National Service (NYSC) — 2023" },
+  { text: "B.Sc. Business Education — Michael Okpara University, 2021" },
+  { text: "ICT Competence Certificate — 2019" },
 ];
 
 export const languages = [
