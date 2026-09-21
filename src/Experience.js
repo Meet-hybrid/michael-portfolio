@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Section from './Section';
-import { experience } from './data';
+import { experience, openSource } from './data';
 import './Experience.css';
 
 export default function Experience() {
@@ -25,6 +25,31 @@ export default function Experience() {
             <ul className="timeline-bullets">
               {e.bullets.map((b, j) => <li key={j}>{b}</li>)}
             </ul>
+          </motion.div>
+        ))}
+      </div>
+
+      <h3 className="sub-title">Open Source</h3>
+      <div className="certs-list">
+        {openSource.map((o, i) => (
+          <motion.div
+            key={i}
+            className="cert-item"
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.08 }}
+          >
+            <span className="cert-marker" />
+            <span className="cert-text">
+              {o.text}
+              {o.link && (
+                <>
+                  {' '}
+                  <a href={o.link} target="_blank" rel="noreferrer">{o.link.replace('https://', '')}</a>
+                </>
+              )}
+            </span>
           </motion.div>
         ))}
       </div>
