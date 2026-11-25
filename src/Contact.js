@@ -16,8 +16,8 @@ export default function Contact() {
         <div className="contact-tag">Available Now</div>
         <h2>Let's Work Together</h2>
         <p>
-          Open to remote backend, API, and platform engineering roles,
-          internships, and international opportunities. Available immediately.
+          Open to remote full-stack, frontend, and backend engineering roles
+          and international opportunities, including relocation. Available immediately.
         </p>
 
         <div className="contact-actions">
