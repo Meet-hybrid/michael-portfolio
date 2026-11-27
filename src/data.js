@@ -168,8 +168,8 @@ export const experience = [
   {
     role: "Frontend Engineer",
     company: "Smallwaka",
-    location: "Vue 3 · TypeScript",
-    date: "2025 – 2026",
+    location: "Vue 3 · Pinia · Vue Router · PrimeVue · Tailwind CSS · Zod · Laravel",
+    date: "2026",
     bullets: [
       "Built the Vue 3 + TypeScript frontend for Smallwaka, a platform that makes going out for outdoor activities easier",
       "Developed the event and activity discovery experience and the booking flow that takes users from an activity to a confirmed booking",
